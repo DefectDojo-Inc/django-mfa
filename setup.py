@@ -21,7 +21,7 @@ for dirpath, dirnames, filenames in os.walk(PROJECT_NAME):
                 dirpath[len(PROJECT_NAME) + 1:], f))
 
 install_requires = [
-    'Django',
+    'Django>=2.2.19',
     'django-argonauts',
     'python-u2flib-server',
     'qrcode',
@@ -51,7 +51,5 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    install_requires=[
-        "Django>=2.2.19",
-    ],
+    install_requires=install_requires,
 )
